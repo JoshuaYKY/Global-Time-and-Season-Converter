@@ -5,20 +5,20 @@ import java.util.Map;
 public class TimeConverter {
     public static LocalTime convertTime(String pFrom, String pTo, String timeInput) {
         Map<String, String> timezones = new HashMap<>();
-        timezones.put("USA", "America/New_York");
-        timezones.put("Japan", "Asia/Tokyo");
-        timezones.put("Australia", "Australia/Sydney");
-        timezones.put("Malaysia", "Asia/Kuala_Lumpur");
-        timezones.put("India", "Asia/Kolkata");
-        timezones.put("UK", "Europe/London");
-        timezones.put("Canada", "America/Toronto");
-        timezones.put("Germany", "Europe/Berlin");
-        timezones.put("China", "Asia/Shanghai");
-        timezones.put("Brazil", "America/Sao_Paulo");
-        timezones.put("South Africa", "Africa/Johannesburg");
-        timezones.put("France", "Europe/Paris");
-        timezones.put("UAE", "Asia/Dubai");
-        timezones.put("Russia", "Europe/Moscow");
+        timezones.put("usa", "America/New_York");
+        timezones.put("japan", "Asia/Tokyo");
+        timezones.put("australia", "Australia/Sydney");
+        timezones.put("malaysia", "Asia/Kuala_Lumpur");
+        timezones.put("india", "Asia/Kolkata");
+        timezones.put("uk", "Europe/London");
+        timezones.put("canada", "America/Toronto");
+        timezones.put("germany", "Europe/Berlin");
+        timezones.put("china", "Asia/Shanghai");
+        timezones.put("brazil", "America/Sao_Paulo");
+        timezones.put("south africa", "Africa/Johannesburg");
+        timezones.put("france", "Europe/Paris");
+        timezones.put("uae", "Asia/Dubai");
+        timezones.put("russia", "Europe/Moscow");
 
         String from = pFrom.trim().toLowerCase();
         String to = pTo.trim().toLowerCase();

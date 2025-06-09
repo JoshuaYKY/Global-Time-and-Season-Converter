@@ -6,21 +6,21 @@ import java.util.Map;
 public class SeasonDeterminer {
     public static String checkSeason(String pCountry) {
         Map<String, String> hemispheres = new HashMap<>();
-        hemispheres.put("USA", "Northern");
-        hemispheres.put("Japan", "Northern");
-        hemispheres.put("Australia", "Southern");
-        hemispheres.put("India", "Northern");
-        hemispheres.put("UK", "Northern");
-        hemispheres.put("Canada", "Northern");
-        hemispheres.put("Germany", "Northern");
-        hemispheres.put("China", "Northern");
-        hemispheres.put("South Africa", "Southern");
-        hemispheres.put("France", "Northern");
-        hemispheres.put("UAE", "Northern");
-        hemispheres.put("Russia", "Northern");
-        hemispheres.put("Argentina", "Southern");
-        hemispheres.put("Mexico", "Northern");
-        hemispheres.put("New Zealand", "Southern");
+        hemispheres.put("usa", "Northern");
+        hemispheres.put("japan", "Northern");
+        hemispheres.put("australia", "Southern");
+        hemispheres.put("india", "Northern");
+        hemispheres.put("uk", "Northern");
+        hemispheres.put("canada", "Northern");
+        hemispheres.put("germany", "Northern");
+        hemispheres.put("china", "Northern");
+        hemispheres.put("south africa", "Southern");
+        hemispheres.put("france", "Northern");
+        hemispheres.put("uae", "Northern");
+        hemispheres.put("russia", "Northern");
+        hemispheres.put("argentina", "Southern");
+        hemispheres.put("mexico", "Northern");
+        hemispheres.put("new zealand", "Southern");
 
         String country = pCountry.trim().toLowerCase();
 
