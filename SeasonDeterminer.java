@@ -23,8 +23,14 @@ public class SeasonDeterminer {
         hemispheres.put("new zealand", "Southern");
 
         String country = pCountry.trim().toLowerCase();
-
        
+        // Check if the country is valid (no numbers or special characters)
+        if (!country.matches("[a-z ]+")) {
+            System.out.println("Invalid country name. Please enter a valid country name (letters only).");
+            return null;
+        }
+    
+        // Check if the country is supported
         if (!hemispheres.containsKey(country)) {
             System.out.println("Country not supported.");
             return null;

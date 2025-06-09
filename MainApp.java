@@ -13,8 +13,16 @@ public class MainApp {
             System.out.println("2. Determine Current Season");
             System.out.println("3. Exit");
             System.out.print("Enter choice: ");
-            choice = input.nextInt();
-            input.nextLine(); // clear newline
+
+            if (input.hasNextInt()) {
+                choice = input.nextInt();
+                input.nextLine(); // clear newline
+            } else {
+                System.out.println("Invalid input, please enter a number.");
+                input.nextLine(); // clear invalid input
+                choice = -1; // set to invalid choice to continue loop
+                continue;
+            }
 
             if (choice == 1) {
                 System.out.print("Enter source country: ");
@@ -25,7 +33,11 @@ public class MainApp {
                 String time = input.nextLine();
 
                 LocalTime cTime = TimeConverter.convertTime(source, target, time);
-                System.out.println("Converted time in " + source + ": " + target);
+                if (cTime !=null) {
+                    System.out.println("Converted time in " + target + ": " + cTime);
+                } else {
+                    System.out.println("Invalid input or time format. Please use HH:mm format.");
+                }
 
             }
 

@@ -38,10 +38,8 @@ public class TimeConverter {
             ZonedDateTime fromZoned = dateTime.atZone(fromZone);
             ZonedDateTime toZoned = fromZoned.withZoneSameInstant(toZone);
 
-            System.out.println("Converted time in " + to + ": " + toZoned.toLocalTime());
             return toZoned.toLocalTime();
         } catch (Exception e) {
-            System.out.println("Invalid time format. Please use HH:mm.");
             return null;
         }
     }
