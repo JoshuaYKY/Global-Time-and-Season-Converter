@@ -26,7 +26,7 @@ public class MainAppTest_JUnit {
         MainApp.main(new String[]{});
         String output = capOut.toString();
 
-        asserTrue("japan to usa time convert, 09:10", output.contains("Converted time in usa: 20:10"));
+        assertTrue("japan to usa time convert, 09:10", output.contains("Converted time in usa: 20:10"));
     }
 
     @Test 
@@ -55,7 +55,6 @@ public class MainAppTest_JUnit {
         System.setIn(new ByteArrayInputStream("3".getBytes()));
         MainApp.main(new String[]{});
         String output = capOut.toString();
-
         assertTrue("Exit application", output.contains("Goodbye!"));
     }
 
